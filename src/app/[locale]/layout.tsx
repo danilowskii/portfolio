@@ -1,6 +1,9 @@
 import { ReactNode } from "react";
 import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
+import Navbar from "../../components/layout/Navbar";
+
+import "../globals.css"
 
 
 interface LocaleLayoutProps {
@@ -21,9 +24,10 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
 
   return (
     <html lang={locale} suppressHydrationWarning>
-      <body className="">
+      <body className="flex flex-col min-h-screen bg-black selection:text-teal-50 selection:bg-teal-600 text-white">
         <NextIntlClientProvider locale={locale} messages={messages}>
-        <main>{children}</main>
+          <Navbar />
+        <main className="flex flex-1">{children}</main>
      </NextIntlClientProvider>
       </body>
     </html>

@@ -1,7 +1,15 @@
 {
-    "Index": {
-      "welcome": "welcome"
-    
-    }
-  }
+  "Home": {
+    "welcome": "Welcome to Home"
   
+  },
+
+  "Nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  }
+}
+
+

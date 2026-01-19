@@ -1,6 +1,15 @@
 {
-  "Index": {
-    "welcome": "bem vindo"
+  "Home": {
+    "welcome": "Bem vindo ao inicio"
   
+  },
+
+  "Nav": {
+    "home": "Início",
+    "about": "Sobre",
+    "projects": "Projetos",
+    "contact": "Contato"
   }
 }
+
+
