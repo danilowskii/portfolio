@@ -1,1 +1,42 @@
 @import "tailwindcss";
+
+@keyframes carousel {
+     
+        from {
+            transform: translateX(0%);
+        }
+        to {
+            transform: translateX(-50%);
+        }
+    
+}
+
+.carousel {
+    display: flex; 
+    width: max-content;
+    gap: 1.5rem;
+    white-space: nowrap;
+    animation: carousel 30s linear infinite;
+  }
+
+  .carousel:hover {
+    animation-play-state: paused;
+  }
+
+  .carousel-mask {
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      black 10%,
+      black 85%,
+      transparent 100%
+    );
+  
+    mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      black 10%,
+      black 85%,
+      transparent 100%
+    );
+  }
