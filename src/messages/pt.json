@@ -1,8 +1,6 @@
 {
-  "Nav": {
-    "home": "Início",
-    "about": "Sobre",
-    "projects": "Projetos",
-    "contact": "Contato"
+  "Index": {
+    "welcome": "bem vindo"
+  
   }
 }
