@@ -49,7 +49,7 @@ export default function Projects() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projectsList.map((project, idx) => (
             <div
-              className="group relative border-2 border-teal-400 hover:bg-white/20 transition-colors ease-in-out duration-200 p-6 rounded-md w-80 h-64"
+              className="group relative border-2 border-teal-400 hover:bg-white/20 transition-colors ease-in-out duration-200 p-6 rounded-md w-80 h-64 hover:shadow-[0_0_20px_rgba(128,203,196,0.3)] hover:shadow-teal-200"
               key={idx}
             >
               <div className="z-10 font-bold font-lg font-serif gap-2 flex flex-col">
