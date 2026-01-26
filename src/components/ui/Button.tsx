@@ -9,7 +9,7 @@ type CommonProps = {
 };
 
 type LinkProps = CommonProps & {
-  href: string;
+  href: string | object;
   download?: boolean;
   rel?: string;
   target?: string;

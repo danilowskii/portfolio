@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import "../globals.css";
-import { Button } from "../../components/ui/Button";
+import { Button } from "@/components/ui/Button";
 import { FaLinkedin, FaGithub, FaWhatsapp } from "react-icons/fa";
 
 export default function HomePage() {
@@ -49,7 +49,7 @@ export default function HomePage() {
             {[...techs, ...techs].map((tech, idx) => (
               <span
                 key={idx}
-                className="shrink-0 px-4 py-1 bg-zinc-800 rounded-full"
+                className="shrink-0 px-4 py-1 bg-zinc-800 border border-teal-200/50 rounded-full"
               >
                 {tech}
               </span>
@@ -60,7 +60,7 @@ export default function HomePage() {
         <Button
           download
           href="/DANILO PAIVA - CV.pdf"
-          className=" relative bg-linear-to-r from-teal-500 via-teal-600 to-teal-600 w-64 rounded-md mx-auto"
+          className="relative bg-linear-to-r from-teal-500 via-teal-600 to-teal-600 w-64 rounded-md mx-auto"
         >
           Baixar CV
         </Button>
