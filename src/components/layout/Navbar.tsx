@@ -1,6 +1,5 @@
 "use client";
 
-
 import { Link, usePathname } from "../../lib/navigation";
 import { useTranslations } from "next-intl";
 
@@ -17,25 +16,25 @@ export default function Nav() {
 
   return (
     <nav className="flex p-8 justify-around  items-center text-lg font-serif">
-      <h1>DP</h1>
+      <h1 className="opacity-0">DP</h1>
       <div className="flex flex-row gap-6">
-      {menuItems.map((item) => {
-        const isActive = pathname === item.path;
+        {menuItems.map((item) => {
+          const isActive = pathname === item.path;
 
-        return (
-          <Link
-            key={item.path}
-            href={item.path}
-            className={`transition-colors hover:text-teal-500 ${
-              isActive ? "text-teal-600 font-semibold" : "text-gray-300"
-            }`}
-          >
-            {item.name}
-          </Link>
-        );
-      })}
+          return (
+            <Link
+              key={item.path}
+              href={item.path}
+              className={`transition-colors hover:text-teal-500 ${
+                isActive ? "text-teal-600 font-semibold" : "text-gray-300"
+              }`}
+            >
+              {item.name}
+            </Link>
+          );
+        })}
       </div>
-      <h1>change lang</h1>
+      <h1 className="opacity-0">change lang</h1>
     </nav>
   );
 }
