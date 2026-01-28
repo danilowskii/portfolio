@@ -25,11 +25,12 @@ export default function Nav() {
             <Link
               key={item.path}
               href={item.path}
-              className={`transition-colors hover:text-teal-500 ${
-                isActive ? "text-teal-600 font-semibold" : "text-gray-300"
+              className={`group relative transition-colors hover:text-teal-500 ${
+                isActive ? "text-teal-500 font-semibold" : "text-gray-300"
               }`}
             >
               {item.name}
+              <span className="absolute left-0 bottom-0 transition-all ease-out w-0 h-px group-hover:w-full bg-teal-500"></span>
             </Link>
           );
         })}

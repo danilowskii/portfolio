@@ -60,7 +60,7 @@ export default function HomePage() {
         <Button
           download
           href="/DANILO PAIVA - CV.pdf"
-          className="relative bg-linear-to-r from-teal-500 via-teal-600 to-teal-600 w-64 rounded-md mx-auto"
+          className="relative bg-linear-to-r from-teal-500 via-teal-600 to-teal-600  w-64 rounded-md mx-auto transition-all hover:shadow-[0_0_20px_rgba(128,203,196,1)]"
         >
           Baixar CV
         </Button>

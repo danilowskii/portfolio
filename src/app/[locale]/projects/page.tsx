@@ -49,7 +49,7 @@ export default function Projects() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projectsList.map((project, idx) => (
             <div
-              className="group relative border-2 border-teal-400 hover:bg-white/20 transition-colors ease-in-out duration-200 p-6 rounded-md w-80 h-64 hover:shadow-[0_0_20px_rgba(128,203,196,0.3)] hover:shadow-teal-200"
+              className="group relative border-2 border-teal-400 bg-teal-200/15 hover:bg-white/20 transition-colors ease-in-out duration-200 p-6 rounded-md w-80 h-64 hover:shadow-[0_0_20px_rgba(128,203,196,0.3)] hover:shadow-teal-200"
               key={idx}
             >
               <div className="z-10 font-bold font-lg font-serif gap-2 flex flex-col">
@@ -70,7 +70,7 @@ export default function Projects() {
                 src={project.imageSrc}
                 alt={project.imgAlt}
                 fill
-                className="object-cover -z-10 delay-100 pointer-events-none opacity-60 group-hover:opacity-100 md:-translate-y-4 group-hover:translate-y-0 md:opacity-0 transition-all duration-300 ease-out"
+                className="object-cover -z-10 delay-100 pointer-events-none opacity-20 group-hover:opacity-100 md:-translate-y-4 group-hover:translate-y-0 md:opacity-0 transition-all duration-300 ease-out"
                 quality={75}
                 loading="lazy"
               />
