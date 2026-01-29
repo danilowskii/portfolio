@@ -94,8 +94,7 @@ export default function About() {
                   {stack.name}
                 </span>
                 <stack.icon
-                  size={60}
-                  className={`${stack.color} m-3 hover:scale-105 hover:-translate-y-2 transition-transform duration-300 ease-in-out`}
+                  className={`${stack.color} w-12.5 h-12.5 sm:w-15 sm:h-15  m-3 hover:scale-105 hover:-translate-y-2 transition-transform duration-300 ease-in-out`}
                 />
               </div>
             </div>
