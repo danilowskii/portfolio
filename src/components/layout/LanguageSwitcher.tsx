@@ -10,7 +10,11 @@ export default function LanguageSwitcher() {
   const langs = ["en", "pt", "es"];
 
   const handleChange = (newLocale: string) => {
-    router.replace(pathname, { locale: newLocale });
+    if (newLocale === currentLocale) return;
+
+    const newPath = pathname.replace(`/${currentLocale}`, `/${newLocale}`);
+
+    router.replace(newPath);
   };
 
   return (
@@ -18,11 +22,11 @@ export default function LanguageSwitcher() {
       {langs.map((lang) => (
         <button
           key={lang}
-          onClick={handleChange(lang)}
+          onClick={() => handleChange(lang)}
           className={`px-2 py-1 uppercase text-sm ${
             currentLocale === lang
-              ? "font-bold border-b-2 border-teal-500"
-              : "opacity-50"
+              ? "font-bold border-b-2 border-teal-500 text-teal-500"
+              : "opacity-50 text-white"
           }`}
         >
           {lang}
