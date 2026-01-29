@@ -26,7 +26,7 @@ export default function HomePage() {
   const t = useTranslations("Home");
 
   return (
-    <div className="font-serif ">
+    <div className="font-serif w-full">
       <div className="text-3xl font-bold flex gap-6 max-w-7xl flex-col text-center">
         <div className="relative group rounded-full w-72 h-72 overflow-hidden transition-colors ease-in-out duration-300 hover:shadow-[0_0_20px_rgba(8,145,178,0.9)] transition-shadow mt-6 mx-auto">
           <Image
@@ -44,7 +44,7 @@ export default function HomePage() {
             {t("role")}
           </h1>
         </div>
-        <div className="overflow-hidden w-72 mx-auto carousel-mask">
+        <div className="overflow-x-hidden w-72 mx-auto carousel-mask">
           <div className="flex flex-row text-sm carousel">
             {[...techs, ...techs].map((tech, idx) => (
               <span

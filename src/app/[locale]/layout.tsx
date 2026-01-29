@@ -29,7 +29,7 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} suppressHydrationWarning>
-      <body className="flex flex-col min-h-screen bg-black selection:text-teal-50 selection:bg-teal-600 text-white">
+      <body className="flex flex-col min-h-screen w-full bg-black selection:text-teal-50 selection:bg-teal-600 text-white overflow-x-hidden">
         <NextIntlClientProvider locale={locale} messages={messages}>
           <div className="w-48 h-48 rounded-full absolute top-10 left-0 pointer-events-none animate-pulse bg-teal-700 filter blur-[100px]"></div>
           <div className="w-48 h-48 rounded-full absolute bottom-10 right-0 pointer-events-none animate-pulse bg-teal-700 filter blur-[100px]"></div>
