@@ -50,7 +50,7 @@ export default function Projects() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-6">
           {projectsList.map((project, idx) => (
             <div
-              className="group relative border-2 border-teal-400 bg-teal-200/15 hover:bg-white/20 transition-colors ease-in-out duration-200 p-6 rounded-md max-w-80 w-full h-64 hover:shadow-[0_0_20px_rgba(128,203,196,0.3)] hover:shadow-teal-200"
+              className="group relative border-2 border-teal-400 bg-teal-200/15 hover:bg-white/20 transition-colors ease-in-out duration-200 p-6 rounded-md max-w-80 w-full h-64 hover:shadow-[0_0_20px_rgba(128,203,196,0.3)] overflow-hidden"
               key={idx}
             >
               <div className="z-10 font-bold font-lg font-serif gap-2 flex flex-col">
@@ -59,9 +59,9 @@ export default function Projects() {
                 </span>
                 <span
                   className="text-sm font-light opacity-100 pointer-events-none
-                group-hover:opacity-0 transition-all duration-300
-                ease-out translate-y-0 group-hover:-translate-y-4 delay-75
-                "
+                  group-hover:opacity-0 transition-all duration-300
+                  ease-out translate-y-0 group-hover:-translate-y-4 delay-75
+                  "
                 >
                   {project.desc}
                 </span>
@@ -71,39 +71,43 @@ export default function Projects() {
                 src={project.imageSrc}
                 alt={project.imgAlt}
                 fill
-                className="object-cover -z-10 delay-100 pointer-events-none opacity-20 group-hover:opacity-100 md:-translate-y-4 group-hover:translate-y-0 md:opacity-0 transition-all duration-300 ease-out"
+                className="object-cover -z-10 delay-100 pointer-events-none opacity-20 sm:group-hover:opacity-100 md:-translate-y-4 group-hover:translate-y-0 md:opacity-0 transition-all duration-300 ease-out"
                 quality={75}
                 loading="lazy"
               />
 
-              <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex flex-1 gap-2">
+              <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex flex-1 gap-2 w-full px-4">
                 <Button
                   href={project.deploy}
                   rel="noopener noreferrer"
                   target="_blank"
-                  className="block w-52 mx-auto delay-100
-                    md:opacity-0 md:translate-y-4
-                    pointer-events-none
-                    transition-all duration-300 ease-out
-                    group-hover:opacity-100
-                    group-hover:translate-y-0
-                    group-hover:pointer-events-auto
-                    "
+                  className="block w-full mx-auto delay-100
+                  
+                  opacity-100 translate-y-0 pointer-events-auto
+                  
+                  md:opacity-0 md:translate-y-4 md:pointer-events-none
+                  group-hover:opacity-100
+                  group-hover:translate-y-0
+                  group-hover:pointer-events-auto
+                  transition-all duration-300 ease-out
+                  "
                 >
                   Ver projeto
                 </Button>
+
                 <Button
                   href={project.github}
                   rel="noopener noreferrer"
                   target="_blank"
                   className="px-0 w-16 flex justify-center 
-                    md:opacity-0 
-                    md:translate-y-4
-                    pointer-events-none mx-auto 
-                    group-hover:opacity-100 
-                    group-hover:translate-y-0 
-                    group-hover:pointer-events-auto delay-100 
-                    transition-all duration-300 ease-out"
+                  
+                  opacity-100 translate-y-0 pointer-events-auto
+                  
+                  md:opacity-0 md:translate-y-4 md:pointer-events-none
+                  group-hover:opacity-100 
+                  group-hover:translate-y-0 
+                  group-hover:pointer-events-auto delay-100 
+                  transition-all duration-300 ease-out"
                 >
                   <FaGithub className="text-xl" />
                 </Button>
