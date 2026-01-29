@@ -15,8 +15,7 @@ export default function Nav() {
   ];
 
   return (
-    <nav className="flex p-4 justify-around items-center text-lg font-serif">
-      <h1 className="opacity-0">DP</h1>
+    <nav className="flex p-5 w-full justify-center items-center text-lg font-serif">
       <div className="flex flex-row gap-4 justify-center items-center">
         {menuItems.map((item) => {
           const isActive = pathname === item.path;
@@ -35,7 +34,6 @@ export default function Nav() {
           );
         })}
       </div>
-      <h1 className="opacity-0">change lang</h1>
     </nav>
   );
 }
