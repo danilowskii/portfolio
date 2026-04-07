@@ -96,7 +96,7 @@ export default function HomePage() {
           <a
             href="/DANILO PAIVA - CV.pdf"
             download={true}
-            className="w-fit h-10 font-bold text-sm bg-teal-500/10 rounded-lg flex items-center justify-center text-teal-500 p-4 gap-2"
+            className="flex gap-2 px-4 py-2 text-sm text-center items-center justify-center bg-teal-600 hover:bg-teal-500 rounded-lg font-semibold transition-all shadow-lg shadow-teal-900/20"
           >
             <FileUser /> Currículo
           </a>
