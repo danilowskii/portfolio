@@ -31,10 +31,10 @@ export default async function LocaleLayout({
     <html lang={locale} suppressHydrationWarning>
       <body className="flex flex-col min-h-screen w-full bg-black selection:text-teal-50 selection:bg-teal-600 text-white overflow-x-hidden">
         <NextIntlClientProvider locale={locale} messages={messages}>
-          <div className="w-48 h-48 rounded-full absolute top-10 left-0 pointer-events-none animate-pulse bg-teal-700 filter blur-[100px]"></div>
-          <div className="w-48 h-48 rounded-full absolute bottom-10 right-0 pointer-events-none animate-pulse bg-teal-700 filter blur-[100px]"></div>
-          <Navbar />
-          <main className="relative flex flex-1 max-w-7xl mx-auto p-10">
+          <div className="w-48 h-48 rounded-full fixed top-10 left-0 pointer-events-none animate-pulse bg-teal-700/15 filter blur-[100px]"></div>
+          <div className="w-48 h-48 rounded-full fixed bottom-10 right-0 pointer-events-none animate-pulse bg-teal-700/15 filter blur-[100px]"></div>
+
+          <main className="relative flex flex-1 max-w-7xl mx-auto">
             {children}
           </main>
         </NextIntlClientProvider>
